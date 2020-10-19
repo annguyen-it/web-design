@@ -1,0 +1,113 @@
+:root {
+  --main-color: #bad2ea;
+  --text-color: #3b78b7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.page-wrapper {
+  width: 70%;
+  min-width: 700px;
+  margin: auto;
+  padding: 2rem;
+}
+
+article {
+  margin-top: 3rem;
+}
+
+article > h2 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  background: var(--main-color);
+}
+
+.about a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.courses table {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+}
+
+.courses td,
+.courses th {
+  border: 1px solid #000000;
+  padding: 5px 10px;
+}
+
+.courses td:first-child {
+  color: var(--text-color);
+}
+
+.submit-info form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-info td {
+  height: 2rem;
+}
+
+.submit-info td:first-child::after {
+  content: ':';
+}
+
+.submit-info input[type='text'] {
+  border: 1px solid #000000;
+  height: 1.4rem;
+  padding-left: 5px;
+  outline: none;
+}
+
+.submit-info input[type='text']:focus {
+  box-shadow: inset 1px 1px #000000, inset -1px -1px #000000;
+}
+
+.submit-info input[type='submit'] {
+  width: 30%;
+  float: left;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+
+  background: #c0c0c0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.submit-info input[type='submit']:hover {
+  opacity: 0.9;
+}
+
+#img {
+  float: right;
+}
+
+footer {
+  height: 2rem;
+  width: 50vw;
+}
+
+span.blue {
+  color: var(--text-color);
+}

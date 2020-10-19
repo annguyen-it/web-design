@@ -1,0 +1,270 @@
+:root {
+  --text-color: #6a2c70;
+  --bg-color: #eeecda;
+  --btn-color: #f08a5d;
+  --btn-color-hover: #f1956d;
+  --btn-color-submit: #21bf73;
+  --btn-color-submit-hover: #4dcb8f;
+  --btn-color-reset: #ff6464;
+  --btn-color-reset-hover: #ff8383;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background: var(--bg-color);
+}
+
+hr {
+  height: 1px;
+  width: 90%;
+  background: var(--text-color);
+}
+
+img {
+  height: 400px;
+  width: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr {
+  border: 1px solid var(--text-color);
+}
+
+td,
+th {
+  padding: 1rem 3rem;
+  border-left: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color);
+}
+
+body > article {
+  display: flex;
+  flex-direction: column;
+}
+
+body > article > * {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > *,
+.content > * {
+  margin-top: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h2 + * {
+  margin: 1.5rem;
+}
+
+.content ul {
+  display: flex;
+}
+
+.content li {
+  padding: 0 2rem;
+  list-style-type: none;
+}
+
+.content a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.content i {
+  color: transparent;
+  margin-left: 5px;
+  transition: all 0.25s ease;
+}
+
+.courses > ul a:hover + i {
+  color: var(--text-color);
+  transform: translateX(8px);
+}
+
+.schedule td:first-child {
+  text-align: center;
+}
+
+.submit-info tr,
+.submit-info th,
+.submit-info td {
+  border: 0;
+}
+
+.submit-info form input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+.submit-info textarea,
+.submit-info select {
+  height: 2rem;
+  width: 110%;
+  padding-left: 10px;
+
+  font-family: inherit;
+  color: var(--text-color);
+  background: #fefefe;
+
+  border: 1px solid var(--text-color);
+  border-radius: 0.3em;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.submit-info form input:not([type="radio"]):not([type="checkbox"]):focus,
+.submit-info textarea:focus,
+.submit-info select:focus {
+  box-shadow: inset 1px 1px var(--text-color), inset -1px -1px var(--text-color), 0px 0px 2px var(--text-color);
+}
+
+.submit-info form input[type="radio"],
+.submit-info form input[type="checkbox"] {
+  display: none;
+}
+
+.submit-info form input[type="radio"] + label,
+.submit-info form input[type="checkbox"] + label {
+  margin-right: 2rem;
+  user-select: none;
+}
+
+.submit-info form input[type="radio"] + label > span,
+.submit-info form input[type="checkbox"] + label > span {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  position: relative;
+  color: var(--bg-color);
+  text-align: center;
+  user-select: none;
+  background: var(--bg-color);
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  transform: scale(1) translateY(3px);
+  transition: all 0.2s ease;
+}
+
+.submit-info form input[type="radio"] + label:active > span,
+.submit-info form input[type="checkbox"] + label:active > span {
+  transform: scale(0);
+}
+
+.submit-info form input[type="radio"]:checked + label > span,
+.submit-info form input[type="checkbox"]:checked + label > span {
+  background: var(--text-color);
+}
+
+.submit-info form input[type="radio"] + label > span {
+  border-radius: 50%;
+}
+
+.submit-info form input[type="checkbox"] + label > span {
+  border-radius: 20%;
+}
+
+.submit-info tr:last-child td:first-child {
+  vertical-align: text-top;
+}
+
+.submit-info textarea {
+  padding-top: 10px;
+  height: 30rem;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.btn {
+  color: var(--bg-color);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn:not(a) {
+  height: 3rem;
+  width: 8rem;
+  margin: 0 3rem;
+
+  background: var(--btn-color);
+  cursor: pointer;
+  border-radius: 2em;
+}
+
+.btn[type="submit"] {
+  background: var(--btn-color-submit);
+}
+
+.btn[type="submit"]:hover {
+  background: var(--btn-color-submit-hover);
+}
+
+.btn[type="reset"] {
+  background: var(--btn-color-reset);
+}
+
+.btn[type="reset"]:hover {
+  background: var(--btn-color-reset-hover);
+}
+
+input.btn {
+  font-size: 14px;
+}
+
+a.btn {
+  margin-top: 4rem;
+  padding: 2rem 5rem 2rem calc(5rem - 25px);
+  background: var(--btn-color);
+  color: var(--bg-color);
+}
+
+a.btn:hover {
+  background: var(--btn-color-hover);
+}
+
+.btn i {
+  margin-right: 5px;
+  transform: rotate(135deg);
+}
+
+.btn:hover i {
+  color: var(--bg-color);
+  transform: rotate(0deg);
+}
+
+footer {
+  height: 2rem;
+}

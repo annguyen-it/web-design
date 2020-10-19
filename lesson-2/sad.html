@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="../src/favicon/favicon.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/9ed593a796.js" crossorigin="anonymous"></script>
+  <title>Sad Mood</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <img src="../src/images/sad.jpg" alt="Sad">
+      <h2>Sad Mood</h2>
+      <hr>
+    </header>
+
+    <section class="content">
+      <article class="courses">
+        <h2>Current courses</h2>
+        <ul>
+          <li><a href="https://www.w3schools.com/css/" target="blank">CSE 123 - CSS</a><i class="fas fa-chevron-right"></i></li>
+          <li><a href="https://www.w3schools.com/js/" target="blank">CSE 456 - Javascript</a><i class="fas fa-chevron-right"></i></li>
+          <li><a href="https://www.w3schools.com/bootstrap/" target="blank">CSE 789 - Bootstrap</a><i class="fas fa-chevron-right"></i>
+          </li>
+        </ul>
+      </article>
+
+      <article class="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Games</li>
+          <li>Music</li>
+          <li>Movies </li>
+        </ul>
+      </article>
+
+      <article class="schedule">
+        <h2>Courses</h2>
+        <table border="1" cellspacing="0">
+          <tr>
+            <th>Course Number</th>
+            <th>Course Title</th>
+            <th>Semester Taken</th>
+          </tr>
+          <tr>
+            <th colspan="3">For Credit</th>
+          </tr>
+          <tr>
+            <td>8.5679</td>
+            <td>Operating System</td>
+            <td>Fall 2018</td>
+          </tr>
+          <tr>
+            <td>9.8678</td>
+            <td>Web Design</td>
+            <td>Fall 2019</td>
+          </tr>
+          <tr>
+            <td>6.5376</td>
+            <td>Artificial Intelligence</td>
+            <td>Spring 2019</td>
+          </tr>
+          <tr>
+            <th colspan="3">For Listener</th>
+          </tr>
+          <tr>
+            <td>8.0383</td>
+            <td>Database</td>
+            <td>Fall 19</td>
+          </tr>
+          <tr>
+            <td>6.0393</td>
+            <td>Java Programming</td>
+            <td>Spring 19</td>
+          </tr>
+        </table>
+      </article>
+
+      <article class="submit-info">
+        <h2>Submit Information</h2>
+        <form action="Post">
+          <table>
+            <tr>
+              <td><label for="name">Full Name:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  id="name">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Gender</td>
+              <td>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  checked>
+                <label for="male">
+                  <span>✔</span>
+                  Male
+                </label>
+
+                <input
+                  type="radio"
+                  name="gender"
+                  id="female">
+                <label for="female">
+                  <span>✔</span>
+                  Female
+                </label>
+
+                <input
+                  type="radio"
+                  name="gender"
+                  id="others">
+                <label for="others">
+                  <span>✔</span>
+                  Others
+                </label>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td>Hobbies</td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  id="music">
+                <label for="music">
+                  <span>✔</span>
+                  Music
+                </label>
+
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  id="games">
+                <label for="games">
+                  <span>✔</span>
+                  Games
+                </label>
+
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  id="movies">
+                <label for="movies">
+                  <span>✔</span>
+                  Movies
+                </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="birth">Date of birth</label></td>
+              <td><input
+                  type="date"
+                  name="birth"
+                  id="birth"></td>
+            </tr>
+
+            <tr>
+              <td><label for="country">Country</label></td>
+              <td>
+                <select name="country" id="country"></select>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="picture">Picture:</label></td>
+              <td><input
+                  type="file"
+                  name="picture"
+                  id="picture"></td>
+            </tr>
+
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input
+                  type="email"
+                  name="email"
+                  id="email"></td>
+            </tr>
+
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td><input
+                  type="password"
+                  name="password"
+                  id="password"></td>
+            </tr>
+
+            <tr>
+              <td><label for="quote">Favorite quote:</label></td>
+              <td><textarea name="quote" id="quote"></textarea></td>
+            </tr>
+          </table>
+        </form>
+
+        <div class="btn-group">
+          <input type="submit" value="Submit" class="btn">
+          <input type="reset" value="Reset" class="btn">
+        </div>
+      </article>
+
+      <a href="../lesson-4/" class="btn"><i class="fas fa-undo"></i>Return</a>
+    </section>
+
+
+    <footer></footer>
+  </article>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
