@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Form</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Layout">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/9ed593a796.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="../src/favicon/favicon.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="navigation">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1>Web Developer, Inc.</h1>
+      </header>
+
+      <div>
+        <div class="sidebar">
+          <div class="sidebar__list">
+            <input type="checkbox" id="collapse-btn-1" checked>
+            <div class="list__name">
+              <label for="collapse-btn-1" class="collapse-btn">
+                <span class="plus"><i class="fas fa-plus"></i></span>
+                <span class="minus"><i class="fas fa-minus"></i></span>
+              </label>
+              <label for="collapse-btn-1">Quicklinks 1</label>
+            </div>
+            <a href="#" class="item">Link 1</a>
+            <a href="#" class="item">Link 2</a>
+            <a href="#" class="item">Link 3</a>
+            <a href="#" class="item">Link 4</a>
+            <a href="#" class="item">Link 5</a>
+          </div>
+          <div class="sidebar__list">
+            <input type="checkbox" id="collapse-btn-2" checked>
+            <div class="list__name">
+              <label for="collapse-btn-2" class="collapse-btn">
+                <span class="plus"><i class="fas fa-plus"></i></span>
+                <span class="minus"><i class="fas fa-minus"></i></span>
+              </label>
+              <label for="collapse-btn-2">Quicklinks 2</label>
+            </div>
+            <a href="#" class="item">Link 1</a>
+            <a href="#" class="item">Link 2</a>
+            <a href="#" class="item">Link 3</a>
+            <a href="#" class="item">Link 4</a>
+            <a href="#" class="item">Link 5</a>
+          </div>
+          <div class="sidebar__list">
+            <input type="checkbox" id="collapse-btn-3" checked>
+            <div class="list__name">
+              <label for="collapse-btn-3" class="collapse-btn">
+                <span class="plus"><i class="fas fa-plus"></i></span>
+                <span class="minus"><i class="fas fa-minus"></i></span>
+              </label>
+              <label for="collapse-btn-3">Quicklinks 3</label>
+            </div>
+            <a href="#" class="item">Link 1</a>
+            <a href="#" class="item">Link 2</a>
+            <a href="#" class="item">Link 3</a>
+            <a href="#" class="item">Link 4</a>
+            <a href="#" class="item">Link 5</a>
+          </div>
+        </div>
+
+        <div class="content">
+          <p class="introduce">Welcome to our sample web page. We'll be dissecting this page piece by piece to so you the best ways to use HTML, CSS and Javascript</p>
+          <div class="profile">
+            <h3>Create a Profile</h3>
+            <form action="" class="content__form">
+              <table>
+                <tr>
+                  <td><label for="txtFirstName">First Name</label></td>
+                  <td><input type="text" name="txtFirstName" id="txtFirstName"></td>
+                </tr>
+                <tr>
+                  <td><label for="txtLastName">Last Name</label></td>
+                  <td><input type="text" name="txtLastName" id="txtLastName"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="">Date of Birth</label>
+                  </td>
+                  <td>
+                    <select name="selDateOfBirth__month" id="selDateOfBirth__month">
+                      <optgroup>
+                        <option value="" selected disabled>month</option>
+                      </optgroup>
+                    </select>
+                    <select name="selDateOfBirth__day" id="selDateOfBirth__day">
+                      <optgroup>
+                        <option value="" selected disabled>day</option>
+                      </optgroup>
+                    </select>
+                    <select name="selDateOfBirth__year" id="selDateOfBirth__year">
+                      <optgroup>
+                        <option value="" selected disabled>year</option>
+                      </optgroup>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="">Gender</label></td>
+                  <td>
+                    <input type="radio" name="gender" id="radGender__male">
+                    <label for="radGender__male">Male</label>
+                    <input type="radio" name="gender" id="radGender__female">
+                    <label for="radGender__female">Female</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <input type="button" value="Save" class="btn">
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+
+          <div class="content__list">
+            <table>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>02/15/1975</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>02/15/1975</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>02/15/1975</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>02/15/1975</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>02/15/1975</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>02/15/1975</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>02/15/1975</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>02/15/1975</td>
+                <td>Male</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <footer>Copyright © 2009</footer>
+    </div>
+  </div>
+</body>
+
+</html>
