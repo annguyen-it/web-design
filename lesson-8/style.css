@@ -88,6 +88,11 @@ header {
   padding: 5px;
 }
 
+
+
+
+/*! Bắt đầu từ đây */
+
 .list__name {
   background-color: #f9f9f9;
   border-bottom: 1px solid #e9e9e9;
@@ -115,6 +120,12 @@ header {
 .sidebar__list > input[type='checkbox']:checked ~ a.item {
   display: none;
 }
+
+/*! Kết thúc */
+
+
+
+
 
 .list__name label {
   cursor: pointer;
