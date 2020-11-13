@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Document</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Demo Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-left: 50px;
+    }
+
+    .page-wrapper>input {
+      width: 30%;
+      margin: 50px 0;
+      display: flex;
+    }
+
+    #box {
+      margin-top: 50px;
+      height: 200px;
+      width: 200px;
+      background-color: lime;
+
+      transition: all ease 0.1s, background-color ease 0.3s
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <input
+      id="input"
+      type="text"
+      onkeyup="handle()">
+
+    <div>You pressed: <span id="content"></span></div>
+
+    <div id="box"
+      onmousedown="bigger(this)"
+      onmouseup="smaller(this)"
+      onmouseover="hover(this)"
+      onmouseleave="unhover(this)">
+    </div>
+  </div>
+
+  <script>
+    function handle() {
+      document.querySelector('#content').innerHTML = input.value
+    }
+
+    function bigger(e) {
+      e.style.height = '300px'
+      e.style.width = '300px'
+    }
+
+    function smaller(e) {
+      e.style.height = '200px'
+      e.style.width = '200px'
+    }
+
+    function hover(e) {
+      e.style.backgroundColor = 'yellow'
+    }
+
+    function unhover(e) {
+      e.style.backgroundColor = 'lime'
+    }
+  </script>
+</body>
+
+</html>
