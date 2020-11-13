@@ -19,10 +19,9 @@ function checkAll() {
   if (!checkEmail()) accept = false
 
   showCheck()
-  if (accept)
-    setTimeout(() => {
-      showAccept()
-    }, 200)
+  setTimeout(() => {
+    accept ? showAccept() : showDeny()
+  }, 200)
 }
 
 function checkUsr() {
