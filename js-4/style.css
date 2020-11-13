@@ -1,0 +1,48 @@
+.page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-wrapper > * {
+  padding: 25px;
+}
+
+td {
+  padding: 5px;
+}
+
+td:first-child {
+  text-align: right;
+}
+
+td:first-child::after {
+  content: ':';
+}
+
+td:nth-child(2) {
+  width: 350px;
+}
+
+td:nth-child(3) {
+  width: 25px;
+}
+
+td > input[type='text'],
+td > input[type='password'],
+td > select,
+td > textarea {
+  width: 100%;
+  padding-left: 3px;
+}
+
+td > input[type='text'],
+td > input[type='password'],
+td > select {
+  height: 22px;
+}
